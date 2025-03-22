@@ -1,0 +1,52 @@
+---
+title: "Clinical Predictor Tool"
+format: html
+---
+
+
+**Limerick Digital Cancer Research Centre**  
+Developed by: **Meghana Kshirsagar** and **Gauri Vaidya**
+
+This project is a proof-of-concept of treatment personalization for patients with **Head and Neck Squamous Cell Carcinoma (HNSCC)** using structured outcomes from completed clinical trials with **Large Language Models (LLMs)**.
+
+It consists of two key components: one for generating patient profiles, and another for relevant treatment recommendations learned from trial outcome data.
+
+![](images/methodology.png)
+
+---
+
+## Project Components
+
+1. **Patient Profile Creation**  
+   Generates a patient profile using a specified clinical trial ID.
+
+2. **Treatment Recommendation**  
+   Recommend treatments by analyzing trial outcomes in the context of the generated patient profile.
+
+---
+
+## Usage Instructions
+
+1. For demonstration purposes, this tool uses the clinical trial ID [NCT02268695](https://clinicaltrials.gov/study/NCT02268695). However, users are encouraged to explore additional completed trials by selecting different NCT IDs from [clinicaltrials.gov](https://clinicaltrials.gov/).
+
+2. Open the `Patient_Profile_Creation` notebook and substitute the nct_id with any other and run all cells to generate a patient profile based on the selected clinical trial.
+
+3. Copy the generated patient profile and paste it into the `Patient_Profile_Treatment_Recommendation` notebook.
+
+4. Run the treatment recommendation notebook to receive a personalized recommendation based on trial outcome data.
+
+
+---
+
+## Required Libraries
+
+- `langchain`  
+- `langchain_community`  
+- `neo4j`  
+- `transformers`
+
+---
+
+Use the navigation bar to explore the notebooks.
+
+![](images/ldcrc-logo.png)

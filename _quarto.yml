@@ -1,0 +1,17 @@
+project:
+  type: website
+website:
+  title: "Clinical Predictor Tool"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Patient Profile Creation"
+        href: Patient_Profile_Creation.qmd
+      - text: "Treatment Recommendation"
+        href: Patient_Profile_Treatment_Recommendation.ipynb
+
+format:
+  html:
+    theme: cosmo
+    toc: true
