@@ -30,7 +30,7 @@ jobs:
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GITHUB_TOKEN }}  # or GH_PAT if you added it
+          personal_token: ${{ secrets.GH_PAT }}  # or GH_PAT if you added it
           publish_dir: ./_site
           publish_branch: gh-pages  # ✅ Force it to create/push to gh-pages
 
